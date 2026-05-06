@@ -1,0 +1,78 @@
+name: fitscan
+description: "FitScan - Coach Fitness Intelligent via ML Kit & Firebase"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # ─── Firebase  ────────────
+  firebase_core: ^4.7.0
+  firebase_auth: ^6.4.0
+
+  # ─── SQLite ────────────────────────────────────────
+  sqflite: ^2.3.0
+  path_provider: ^2.1.4
+  path: ^1.9.0
+
+  # ─── ML Kit ──────────────────────────────────────────────────
+  google_mlkit_pose_detection: ^0.14.1
+  google_mlkit_object_detection: ^0.15.1
+  google_mlkit_image_labeling: ^0.14.2
+  google_mlkit_face_detection: ^0.13.2
+
+  # ─── Caméra & Image ──────────────────────────────────────────
+  image_picker: ^1.2.1
+  camera: ^0.12.0+1
+
+  # ─── Navigation ──────────────────────────────────────────────
+  go_router: ^17.2.2
+
+  # ─── UI / Animations ─────────────────────────────────────────
+  flutter_animate: ^4.5.2
+  fl_chart: ^1.2.0
+  cached_network_image: ^3.3.1
+  shimmer: ^3.0.0
+  percent_indicator: ^4.2.5
+  lottie: ^3.1.2
+  cupertino_icons: ^1.0.8
+
+  # ─── Sons ────────────────────────────────────────────────────
+  audioplayers: ^6.0.0
+  vibration: ^3.1.8
+
+  # ─── Stockage local ──────────────────────────────────────────
+  shared_preferences: ^2.5.5
+
+  # ─── Utils ───────────────────────────────────────────────────
+  permission_handler: ^12.0.1
+  uuid: ^4.5.3
+  intl: ^0.20.0
+  logger: ^2.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/images/
+    - assets/animations/
+    - assets/sounds/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Cairo-Regular.ttf
+          weight: 400
